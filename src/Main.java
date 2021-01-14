@@ -1,5 +1,5 @@
 public class Main {
-    private SmsService emailService = new SmsService();
+    public MessageService emailService = new PhoneService();
     public void send(){
         emailService.sendEmail("Kieu Anh");
     }
@@ -7,5 +7,6 @@ public class Main {
     public static void main(String[] args) {
         Main main = new Main();
         main.send();
+        System.out.println(main.emailService instanceof MessageService);
     }
 }
