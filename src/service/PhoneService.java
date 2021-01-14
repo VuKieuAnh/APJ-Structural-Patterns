@@ -1,3 +1,5 @@
+package service;
+
 public class PhoneService implements MessageService {
     @Override
     public void sendEmail(String mess) {
